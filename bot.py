@@ -1,3 +1,5 @@
 import os
-TELEGRAM_TOKEN = os.environ.get("TELEGRAM_TOKEN")
-OPENAI_API_KEY = os.environ.get("OPENAI_API_KEY")
+
+token = os.environ.get("TELEGRAM_TOKEN")
+print(f"TELEGRAM_TOKEN: {token}")
+exit(0)
