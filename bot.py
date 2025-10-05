@@ -15,3 +15,6 @@ def start(message):
 
 print("Бот готов к работе, запускаем polling...")
 bot.infinity_polling()
+@bot.message_handler(commands=['hello'])
+def hello(message):
+    bot.send_message(message.chat.id, "Привет! Я работаю на Render 😊")
